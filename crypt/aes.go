@@ -23,6 +23,7 @@ func EncryptFile(filePath string, password string, updateProgress func(int, stri
 	}
 	defer file.Close()
 
+	//aa
 	fileInfo, err := file.Stat()
 	if err != nil {
 		return "", err
