@@ -74,7 +74,7 @@ func EncryptFile(filePath string, password string, updateProgress func(int, stri
 		if n == 0 {
 			break
 		}
-
+		//aa
 		// AES encryption
 		ciphertext := gcm.Seal(nil, nonce, buf[:n], nil)
 
