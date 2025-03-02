@@ -23,7 +23,7 @@ func (a *App) DecryptFile(filePath string, key string) (string, error) {
 	return crypt.DecryptFile(filePath, key, a.updateProgress)
 }
 
-// Update progress method (thread-safe)mmm
+// Update progress method (thread-safe)
 func (a *App) updateProgress(percent int, status string) {
 	a.mu.Lock()
 	defer a.mu.Unlock()
